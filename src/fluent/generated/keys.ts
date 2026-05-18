@@ -5,9 +5,25 @@ declare global {
         namespace Internal {
             interface Keys extends KeysRegistry {
                 explicit: {
+                    ai_demand_create_acl: {
+                        table: 'sys_security_acl'
+                        id: 'c7af0caf673947c29c527f716a7895a4'
+                    }
+                    ai_demand_delete_acl: {
+                        table: 'sys_security_acl'
+                        id: '510170bd4c784767bf6f5b0f3c9ad380'
+                    }
                     ai_demand_menu: {
                         table: 'sys_app_application'
                         id: '8cd0c5376f8541698084c2155584359d'
+                    }
+                    ai_demand_read_acl: {
+                        table: 'sys_security_acl'
+                        id: '4e2aaa9334a0440e9ef3c2c7553012c6'
+                    }
+                    ai_demand_write_acl: {
+                        table: 'sys_security_acl'
+                        id: 'fe9a47aecd9840ae92a2cb6fd3db73a7'
                     }
                     ai_demands_module: {
                         table: 'sys_app_module'
@@ -79,6 +95,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '0a71a60130194e99864af9e258fbd285'
+                        key: {
+                            sys_security_acl: 'c7af0caf673947c29c527f716a7895a4'
+                            sys_user_role: {
+                                id: 'd4aad05503bc4e1e99300780e7b7e086'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '0b1782d2d73049d99f169f650b54b773'
                         key: {
@@ -100,6 +129,19 @@ declare global {
                         id: '13d457c4abc34347a4c8dab02af6a500'
                         key: {
                             name: 'x_nesa_aid_ai_demand'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '156cceaaa5f34e0588fe00cbbc63c979'
+                        key: {
+                            sys_security_acl: '4e2aaa9334a0440e9ef3c2c7553012c6'
+                            sys_user_role: {
+                                id: '1ea99b0b7f004822a93e54303c9a12ea'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -347,6 +389,19 @@ declare global {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'use_case_data_sources'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '3a3b7ca165b94e4d8744af0a63ea2691'
+                        key: {
+                            sys_security_acl: 'fe9a47aecd9840ae92a2cb6fd3db73a7'
+                            sys_user_role: {
+                                id: 'e802c192fcf748769dc4380474d98c74'
+                                key: {
+                                    name: 'x_nesa_aid.change_agent'
+                                }
+                            }
                         }
                     },
                     {
@@ -1468,6 +1523,19 @@ declare global {
                         key: {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'delivery_stage'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'f8b583127b8849fcbf406d42d35dbf26'
+                        key: {
+                            sys_security_acl: '510170bd4c784767bf6f5b0f3c9ad380'
+                            sys_user_role: {
+                                id: '0209249ef91248fea03fdcb204321156'
+                                key: {
+                                    name: 'admin'
+                                }
+                            }
                         }
                     },
                     {
