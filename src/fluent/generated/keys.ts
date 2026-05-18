@@ -822,6 +822,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role'
+                        id: '92a2353429854e819ae0d1c7da64fbbc'
+                        key: {
+                            name: 'x_nesa_aid.admin'
+                        }
+                    },
+                    {
                         table: 'sys_ui_form_section'
                         id: '93aed8d4a8544edea139928e5e92b9ed'
                         deleted: true
@@ -1295,6 +1302,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role'
+                        id: 'e37cc9cce01f46b1bdc565d5df841fa8'
+                        key: {
+                            name: 'x_nesa_aid.delivery_manager'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: 'e41118f798d748ffb146ab746d1b6922'
                         deleted: true
@@ -1334,6 +1348,13 @@ declare global {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'description'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_user_role'
+                        id: 'e802c192fcf748769dc4380474d98c74'
+                        key: {
+                            name: 'x_nesa_aid.change_agent'
                         }
                     },
                     {

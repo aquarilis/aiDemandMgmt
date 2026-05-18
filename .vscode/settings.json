@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^sdk build$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
