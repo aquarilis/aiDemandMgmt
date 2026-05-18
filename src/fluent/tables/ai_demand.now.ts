@@ -1,5 +1,6 @@
 import {
     // Acl,
+    UiPolicy,
     Table,
     Record,
     OverrideColumn,
@@ -123,6 +124,23 @@ Record({
         label: 'Use case description',
         language: 'en',
     },
+})
+
+UiPolicy({
+    $id: Now.ID['ai_demand_business_value_policy'],
+    table: 'x_nesa_aid_ai_demand',
+    shortDescription: 'Hide and clear annual business value when category is not cashable',
+    conditions: 'business_value_category!=cashable',
+    onLoad: true,
+    reverseIfFalse: true,
+    actions: [
+        {
+            field: 'annual_business_value',
+            mandatory: false,
+            visible: false,
+            cleared: true,
+        },
+    ],
 })
 
 // Acl({

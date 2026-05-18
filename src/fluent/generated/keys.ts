@@ -375,6 +375,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_policy'
+                        id: 'bb4f215da39648c7bdcf8679c9a5a094'
+                        key: {
+                            table: 'x_nesa_aid_ai_demand'
+                            short_description: 'Hide and clear annual business value when category is not cashable'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'c2d593ea13ae46c391c60233493b15c1'
                         key: {
@@ -414,6 +422,20 @@ declare global {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'business_value_category'
                             value: 'cashable'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy_action'
+                        id: 'd7b5cb74016b4a69a9eb2b37184fa3ce'
+                        key: {
+                            ui_policy: {
+                                id: 'bb4f215da39648c7bdcf8679c9a5a094'
+                                key: {
+                                    table: 'x_nesa_aid_ai_demand'
+                                    short_description: 'Hide and clear annual business value when category is not cashable'
+                                }
+                            }
+                            field: 'annual_business_value'
                         }
                     },
                     {
