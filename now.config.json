@@ -1,0 +1,6 @@
+{
+  "scope": "x_nesa_aid",
+  "scopeId": "5031172517124ff5b0e8ece747565c0a",
+  "name": "Nestlé AI Demand Management",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}
