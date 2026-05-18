@@ -117,7 +117,7 @@ Record({
     $id: Now.ID['ai_demand_override_description'],
     table: 'sys_documentation',
     data: {
-        name: 'x',
+        name: 'x_nesa_aid_ai_demand',
         element: 'description',
         label: 'Use case description',
         language: 'en',
