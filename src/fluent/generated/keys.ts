@@ -13,6 +13,10 @@ declare global {
                         table: 'sys_security_acl'
                         id: '510170bd4c784767bf6f5b0f3c9ad380'
                     }
+                    ai_demand_master_data_separator: {
+                        table: 'sys_app_module'
+                        id: 'fb33ef302a294b3e99248041b84ddfa8'
+                    }
                     ai_demand_menu: {
                         table: 'sys_app_application'
                         id: '8cd0c5376f8541698084c2155584359d'
@@ -33,6 +37,26 @@ declare global {
                         table: 'sys_module'
                         id: 'e937f4154126499d8b01d03b6c29e921'
                     }
+                    end_to_end_process_create_acl: {
+                        table: 'sys_security_acl'
+                        id: '95b5522902b2437ca85f30d604d77439'
+                    }
+                    end_to_end_process_delete_acl: {
+                        table: 'sys_security_acl'
+                        id: '4de7f7f2e84444c7a3c819f8d62e38ed'
+                    }
+                    end_to_end_process_read_acl: {
+                        table: 'sys_security_acl'
+                        id: 'a6f6b2f1d1c24b4d97aa088978ca8a15'
+                    }
+                    end_to_end_process_write_acl: {
+                        table: 'sys_security_acl'
+                        id: 'b594ab9b14c940b7b6a1dc98998a797a'
+                    }
+                    end_to_end_processes_module: {
+                        table: 'sys_app_module'
+                        id: '472b617f036f42e5b2e6da46363d8a7f'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: 'e1ec3b3ecd414f4fad62edd2a7f82833'
@@ -45,6 +69,13 @@ declare global {
                         key: {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'annual_business_value'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '05fa0852255644d6954cbe2d7ff8fda9'
+                        key: {
+                            name: 'x_nesa_aid_end_to_end_process'
                         }
                     },
                     {
@@ -103,6 +134,15 @@ declare global {
                                     name: 'snc_internal'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '187131de72be4ec4945f26b6d444e440'
+                        key: {
+                            name: 'x_nesa_aid_end_to_end_process'
+                            element: 'active'
+                            language: 'en'
                         }
                     },
                     {
@@ -206,6 +246,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '427863b929284c7d8aaf1117f329294e'
+                        key: {
+                            sys_security_acl: '4de7f7f2e84444c7a3c819f8d62e38ed'
+                            sys_user_role: {
+                                id: 'c9444f4714b046a88f43da989105ae73'
+                                key: {
+                                    name: 'admin'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '458d6b0d28484c3eb910cd8ff4b3854f'
                         key: {
@@ -229,6 +282,19 @@ declare global {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'related_to_it_project'
                             value: 'no'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '4e60f3b1cda14e07ab3cfb2899514e4b'
+                        key: {
+                            sys_security_acl: 'a6f6b2f1d1c24b4d97aa088978ca8a15'
+                            sys_user_role: {
+                                id: '5cc5af9c98b846cd92ab0da579abf141'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -276,6 +342,14 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: '616c7e09176744cabfcccd9fadfa3548'
+                        key: {
+                            name: 'x_nesa_aid_end_to_end_process'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: '61861c3e35d5496c81781a82be30b9cc'
                         key: {
                             name: 'x_nesa_aid_ai_demand'
@@ -308,6 +382,30 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '693e8af26b914ada9ee15a4dcc15dac0'
+                        key: {
+                            name: 'x_nesa_aid_end_to_end_process'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '748679eb50e0443290ca870294e47f14'
+                        key: {
+                            name: 'x_nesa_aid_end_to_end_process'
+                            element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '7750f391414147fe808c116a3dbd7de7'
+                        key: {
+                            name: 'x_nesa_aid_end_to_end_process'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '7d234e25a29941c5bce1c2ca18d4fe3f'
                         key: {
@@ -323,6 +421,14 @@ declare global {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'geographical_scope'
                             value: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '860f027f1888436f9b12762a3ac40af4'
+                        key: {
+                            name: 'x_nesa_aid_end_to_end_process'
+                            element: 'active'
                         }
                     },
                     {
@@ -439,6 +545,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'd950081a40be4b98969b895ac6ad1731'
+                        key: {
+                            sys_security_acl: '95b5522902b2437ca85f30d604d77439'
+                            sys_user_role: {
+                                id: '92a2353429854e819ae0d1c7da64fbbc'
+                                key: {
+                                    name: 'x_nesa_aid.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'dcfdf705548c40ffa419d2af8613b5da'
                         key: {
@@ -504,6 +623,28 @@ declare global {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'delivery_stage'
                             value: 'decommissioning'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'ee995e6d11f64f73bb513bb33b945d07'
+                        key: {
+                            name: 'x_nesa_aid_end_to_end_process'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'ef09309028d94da0a1707ee303a9ddcb'
+                        key: {
+                            sys_security_acl: 'b594ab9b14c940b7b6a1dc98998a797a'
+                            sys_user_role: {
+                                id: '92a2353429854e819ae0d1c7da64fbbc'
+                                key: {
+                                    name: 'x_nesa_aid.admin'
+                                }
+                            }
                         }
                     },
                     {
