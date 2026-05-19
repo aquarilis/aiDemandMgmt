@@ -58,7 +58,7 @@ Acl({
 Acl({
     $id: Now.ID['ai_service_delete_acl'],
     type: 'record',
-    table: 'x_nesa_aid_ai_service   ',
+    table: 'x_nesa_aid_ai_service',
     operation: 'delete',
     decisionType: 'allow',
     roles: ['admin'],

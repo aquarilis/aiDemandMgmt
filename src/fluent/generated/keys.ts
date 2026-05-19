@@ -97,6 +97,86 @@ declare global {
                         table: 'sys_app_module'
                         id: '472b617f036f42e5b2e6da46363d8a7f'
                     }
+                    md_ai_service_ai_ml: {
+                        table: 'x_nesa_aid_ai_service'
+                        id: 'ed6a5f17444f42268453b86e749c98e3'
+                    }
+                    md_ai_service_genai: {
+                        table: 'x_nesa_aid_ai_service'
+                        id: '0d03a13365ef4e1c98a357637b305f78'
+                    }
+                    md_ai_service_personal_productivity_ai: {
+                        table: 'x_nesa_aid_ai_service'
+                        id: '4b21e7de315149179760f6c983bdf452'
+                    }
+                    md_ai_service_powerapps: {
+                        table: 'x_nesa_aid_ai_service'
+                        id: 'ec934d1b169542fe8efbdc60e1ec1068'
+                    }
+                    md_ai_service_rpa: {
+                        table: 'x_nesa_aid_ai_service'
+                        id: 'aa7588e733f94127b4dc827baa055257'
+                    }
+                    md_ai_technology_automationanywhere: {
+                        table: 'x_nesa_aid_ai_technology'
+                        id: 'aab0904587a241d286485b9624efcd18'
+                    }
+                    md_ai_technology_blueprism: {
+                        table: 'x_nesa_aid_ai_technology'
+                        id: 'cc3ef781421c47b9b3e54faf41361354'
+                    }
+                    md_ai_technology_m365_copilot: {
+                        table: 'x_nesa_aid_ai_technology'
+                        id: '29839f06e4014f3d8861296f7e67ce6a'
+                    }
+                    md_ai_technology_microsoft_copilot_studio: {
+                        table: 'x_nesa_aid_ai_technology'
+                        id: '5b8eab4c47be43289107eed7637d6870'
+                    }
+                    md_ai_technology_snow_workflow_engine: {
+                        table: 'x_nesa_aid_ai_technology'
+                        id: '106f86432d7f4963ba44c621b3bb119f'
+                    }
+                    md_end_to_end_forecast_to_stock: {
+                        table: 'x_nesa_aid_end_to_end_process'
+                        id: '684ca7508c9b426dbfbd3583e6f764cd'
+                    }
+                    md_end_to_end_hire_to_retire: {
+                        table: 'x_nesa_aid_end_to_end_process'
+                        id: 'ce46afb47e724c199ee5e98dcaf375fd'
+                    }
+                    md_end_to_end_idea_to_scale: {
+                        table: 'x_nesa_aid_end_to_end_process'
+                        id: '3d6d28a6d6664a50970faf7b298df752'
+                    }
+                    md_end_to_end_insights_to_execution: {
+                        table: 'x_nesa_aid_end_to_end_process'
+                        id: 'dd2ff90075b949c79f6640ce8bf26eb0'
+                    }
+                    md_end_to_end_it_for_it: {
+                        table: 'x_nesa_aid_end_to_end_process'
+                        id: '8618523864784f129cd0b29f832682bd'
+                    }
+                    md_end_to_end_order_to_cash: {
+                        table: 'x_nesa_aid_end_to_end_process'
+                        id: '772a48d89fba437d91132314ddb9a12e'
+                    }
+                    md_end_to_end_partner_to_sell: {
+                        table: 'x_nesa_aid_end_to_end_process'
+                        id: 'dd8347c660a94867aa976d94019262b5'
+                    }
+                    md_end_to_end_plan_to_perform: {
+                        table: 'x_nesa_aid_end_to_end_process'
+                        id: '25cc400ba0454e77ad63d5848f334b2c'
+                    }
+                    md_end_to_end_record_to_report: {
+                        table: 'x_nesa_aid_end_to_end_process'
+                        id: '20411c3e487d44d7beab946067dd8bca'
+                    }
+                    md_end_to_end_source_to_pay: {
+                        table: 'x_nesa_aid_end_to_end_process'
+                        id: '47e0da706a6d48a89a8c9df4c9d354b2'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: 'e1ec3b3ecd414f4fad62edd2a7f82833'
@@ -138,6 +218,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '093ed83a4a6041d69e0bdcb0bf9b255a'
+                        deleted: true
                         key: {
                             name: 'x_nesa_aid_ai_technology'
                             element: 'category'
@@ -299,6 +380,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '2ab0c90965614bb395535f1859632ad4'
+                        deleted: true
                         key: {
                             name: 'x_nesa_aid_ai_technology'
                             element: 'category'
@@ -447,6 +529,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '4ffbbf5ebb444c9c96eee1dee7642d69'
+                        deleted: true
                         key: {
                             name: 'x_nesa_aid_ai_technology'
                             element: 'category'
@@ -514,6 +597,15 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: '61d0daad57344d8486008731466f7de0'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
+                            value: 'ui_for_ai'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: '62e602a534974937a4fdbfab7f3766c5'
                         key: {
                             name: 'x_nesa_aid_ai_demand'
@@ -544,6 +636,15 @@ declare global {
                             name: 'x_nesa_aid_end_to_end_process'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '6a94fe9815d04ca598c2fe5cc3b40123'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
+                            value: 'automations'
                         }
                     },
                     {
@@ -674,6 +775,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'a655616663b742cb81b434ee910e2e6d'
+                        deleted: true
                         key: {
                             name: 'x_nesa_aid_ai_technology'
                             element: 'category'
@@ -798,6 +900,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'c984475605f34fc7b9d3dca31981121e'
+                        deleted: true
                         key: {
                             name: 'x_nesa_aid_ai_technology'
                             element: 'category'
@@ -951,6 +1054,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'e65241e7dac14f1da1dd769d33c04569'
+                        deleted: true
                         key: {
                             name: 'x_nesa_aid_ai_technology'
                             element: 'category'
