@@ -3,6 +3,7 @@
         "/^sdk build$/": {
             "approve": true,
             "matchCommandLine": true
-        }
+        },
+        "now-sdk": true
     }
 }
