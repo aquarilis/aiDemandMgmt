@@ -97,6 +97,10 @@ declare global {
                         table: 'sys_app_module'
                         id: '472b617f036f42e5b2e6da46363d8a7f'
                     }
+                    group_type_ai_demand_assignment: {
+                        table: 'sys_user_group_type'
+                        id: '560a047a3dfd4f9a935c6074678abead'
+                    }
                     md_ai_service_ai_ml: {
                         table: 'x_nesa_aid_ai_service'
                         id: 'ed6a5f17444f42268453b86e749c98e3'
