@@ -24,6 +24,7 @@ export const x_nesa_aid_ai_technology = Table({
         category: ChoiceColumn({
             label: 'Category',
             dropdown: 'dropdown_with_none',
+            mandatory: true,
             choices: {
                 ui_for_ai: { label: 'UI for AI', sequence: 100 },
                 automations: { label: 'Automations', sequence: 200 },
