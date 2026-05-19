@@ -33,6 +33,46 @@ declare global {
                         table: 'sys_app_module'
                         id: '14263428d879470e906e8081df58bc75'
                     }
+                    ai_service_create_acl: {
+                        table: 'sys_security_acl'
+                        id: 'fd04ffb1bba540e8ba58027df1eededa'
+                    }
+                    ai_service_delete_acl: {
+                        table: 'sys_security_acl'
+                        id: '788ebd8703bf470f80bde3eb74820129'
+                    }
+                    ai_service_read_acl: {
+                        table: 'sys_security_acl'
+                        id: '3f8ecf5e4dc44649a3899648a651c0f2'
+                    }
+                    ai_service_write_acl: {
+                        table: 'sys_security_acl'
+                        id: 'd38b31d757504feebf74d9d2ed7c790a'
+                    }
+                    ai_services_module: {
+                        table: 'sys_app_module'
+                        id: '5d4d4ffbcc4f448699d0f9a3c20bf1ea'
+                    }
+                    ai_technologies_module: {
+                        table: 'sys_app_module'
+                        id: '29897999e0124b5696a439509144b285'
+                    }
+                    ai_technology_create_acl: {
+                        table: 'sys_security_acl'
+                        id: '93f9ceb7be364270965844bd778b3b6c'
+                    }
+                    ai_technology_delete_acl: {
+                        table: 'sys_security_acl'
+                        id: '33f28371ae2c46ae829ff7cddc480cc3'
+                    }
+                    ai_technology_read_acl: {
+                        table: 'sys_security_acl'
+                        id: 'd5a2170f68f144ddbc0101253991f733'
+                    }
+                    ai_technology_write_acl: {
+                        table: 'sys_security_acl'
+                        id: 'bc6fecad032c457898dac9b927b88f34'
+                    }
                     bom_json: {
                         table: 'sys_module'
                         id: 'e937f4154126499d8b01d03b6c29e921'
@@ -64,6 +104,15 @@ declare global {
                 }
                 composite: [
                     {
+                        table: 'sys_documentation'
+                        id: '01429f3e68764dea997bd2616923c481'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'active'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '0292fa939f8d4b8f9554d2b51e3b11c4'
                         key: {
@@ -87,6 +136,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '093ed83a4a6041d69e0bdcb0bf9b255a'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
+                            value: 'other'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '0a71a60130194e99864af9e258fbd285'
                         key: {
@@ -106,6 +164,14 @@ declare global {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'related_to_it_project'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '0c5ce722fd63428e87f4fcca8a735fc5'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'NULL'
                         }
                     },
                     {
@@ -137,6 +203,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '179f9f26b94c4729a7ff8502e31fcebc'
+                        key: {
+                            name: 'x_nesa_aid_ai_demand'
+                            element: 'ai_technology'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '187131de72be4ec4945f26b6d444e440'
                         key: {
@@ -160,6 +234,15 @@ declare global {
                         key: {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'business_application'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '1d793a1a02c848088efe7e4e5ab10133'
+                        key: {
+                            name: 'x_nesa_aid_ai_service'
+                            element: 'NULL'
                             language: 'en'
                         }
                     },
@@ -206,6 +289,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '27f2230ea5144b0995ba3ea461733059'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'active'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '2ab0c90965614bb395535f1859632ad4'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
+                            value: 'robotics_process_automation'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '2ef84c2d592a43998a25a0f11df2116a'
                         key: {
@@ -241,6 +341,45 @@ declare global {
                                 id: 'e802c192fcf748769dc4380474d98c74'
                                 key: {
                                     name: 'x_nesa_aid.change_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '3b92f6ac34bc4327a2d9c2602833b94d'
+                        key: {
+                            sys_security_acl: 'd38b31d757504feebf74d9d2ed7c790a'
+                            sys_user_role: {
+                                id: '92a2353429854e819ae0d1c7da64fbbc'
+                                key: {
+                                    name: 'x_nesa_aid.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '3c7924bf1f4d4d2cb15bebcf0fc72460'
+                        key: {
+                            sys_security_acl: '93f9ceb7be364270965844bd778b3b6c'
+                            sys_user_role: {
+                                id: '92a2353429854e819ae0d1c7da64fbbc'
+                                key: {
+                                    name: 'x_nesa_aid.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '3d1f6e499a5140ceb192b7b52205cd31'
+                        key: {
+                            sys_security_acl: 'bc6fecad032c457898dac9b927b88f34'
+                            sys_user_role: {
+                                id: '92a2353429854e819ae0d1c7da64fbbc'
+                                key: {
+                                    name: 'x_nesa_aid.admin'
                                 }
                             }
                         }
@@ -306,6 +445,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '4ffbbf5ebb444c9c96eee1dee7642d69'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
+                            value: 'deep_learning'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '504cd2942166422db4672067b834c926'
                         key: {
@@ -338,6 +486,14 @@ declare global {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'geographical_scope'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '5d0ca476f425478c96db9aa3ac0b5447'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
                         }
                     },
                     {
@@ -392,6 +548,23 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: '6fe7c46b7be34f6ead4b0934ccec3b92'
+                        key: {
+                            name: 'x_nesa_aid_ai_demand'
+                            element: 'end_to_end_process'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '72fcb2f1aa844ce5bb402f0ce787b5ed'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: '748679eb50e0443290ca870294e47f14'
                         key: {
                             name: 'x_nesa_aid_end_to_end_process'
@@ -403,6 +576,15 @@ declare global {
                         id: '7750f391414147fe808c116a3dbd7de7'
                         key: {
                             name: 'x_nesa_aid_end_to_end_process'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '788b487279aa45b89aca890e1c89b41d'
+                        key: {
+                            name: 'x_nesa_aid_ai_demand'
+                            element: 'end_to_end_process'
+                            language: 'en'
                         }
                     },
                     {
@@ -432,6 +614,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '86b337c4703b4c798573da57fed482f0'
+                        key: {
+                            name: 'x_nesa_aid_ai_demand'
+                            element: 'ai_service'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '8a9f0b73d14f4c1ca57da711664ccc86'
                         key: {
@@ -456,6 +646,41 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '953fc7a2ac76453fbfa16a20c23bdedd'
+                        key: {
+                            sys_security_acl: 'fd04ffb1bba540e8ba58027df1eededa'
+                            sys_user_role: {
+                                id: '92a2353429854e819ae0d1c7da64fbbc'
+                                key: {
+                                    name: 'x_nesa_aid.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '9ad4e840734341f69e6cbb394e3a86ec'
+                        key: {
+                            sys_security_acl: 'd5a2170f68f144ddbc0101253991f733'
+                            sys_user_role: {
+                                id: '413cee49ad4c4f5185c663272e389f42'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'a655616663b742cb81b434ee910e2e6d'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
+                            value: 'computer_vision'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: 'a8e2dd4c59ad422caa8d39310535ceef'
                         key: {
@@ -466,9 +691,61 @@ declare global {
                     },
                     {
                         table: 'sys_db_object'
+                        id: 'ac2545bc5c63452087771d8ad0fbd3cc'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'aca36d442bc941a58c2e04d9aae41920'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'aec9d0aef59a4bbdb9b37734732e92de'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'b22f097d77064f079e40b4b78aac1d8c'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
                         id: 'b24bc36d45f846db883c25df6d8ddfcb'
                         key: {
                             name: 'x_nesa_aid_ai_demand'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'b479908a14db4a85ac5fb63d898ef08c'
+                        key: {
+                            name: 'x_nesa_aid_ai_service'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'b59262391b504d98b81b1de721a60a05'
+                        key: {
+                            sys_security_acl: '788ebd8703bf470f80bde3eb74820129'
+                            sys_user_role: {
+                                id: '527fccadc9a24eb0995c5ffec5d1640e'
+                                key: {
+                                    name: 'admin'
+                                }
+                            }
                         }
                     },
                     {
@@ -497,12 +774,58 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'c378019c9a7a44f3b621e15ca059b3f1'
+                        key: {
+                            sys_security_acl: '3f8ecf5e4dc44649a3899648a651c0f2'
+                            sys_user_role: {
+                                id: 'd57ba5ca38f14bd49cfc98eb3d4ec92f'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: 'c3ae2b40899443cb9411b819a4cbc96b'
                         key: {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'delivery_stage'
                             value: 'mvp'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'c984475605f34fc7b9d3dca31981121e'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
+                            value: 'machine_learning'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'ca3f720fe3724dcba6895d59d3ccfb96'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'd15b2c3c5bd9405695032f23b5a54ec9'
+                        key: {
+                            name: 'x_nesa_aid_ai_service'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'd17b43d7540b4b69aefb96a89524a0a8'
+                        key: {
+                            name: 'x_nesa_aid_ai_service'
+                            element: 'active'
                         }
                     },
                     {
@@ -545,6 +868,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'd87f8432c36743f792e0089c37c0c378'
+                        key: {
+                            name: 'x_nesa_aid_ai_demand'
+                            element: 'ai_service'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: 'd950081a40be4b98969b895ac6ad1731'
                         key: {
@@ -566,10 +898,26 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: 'e04e54332c9f436e8cc80c7f94c03749'
+                        key: {
+                            name: 'x_nesa_aid_ai_service'
+                            element: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_user_role'
                         id: 'e37cc9cce01f46b1bdc565d5df841fa8'
                         key: {
                             name: 'x_nesa_aid.delivery_manager'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'e4b0277ce6404b5eb169977a6634b268'
+                        key: {
+                            name: 'x_nesa_aid_ai_service'
+                            element: 'name'
                         }
                     },
                     {
@@ -589,6 +937,24 @@ declare global {
                             name: 'x_nesa_aid_ai_demand'
                             element: 'description'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'e62130b3c2144420b9e56cefa5925510'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'e65241e7dac14f1da1dd769d33c04569'
+                        key: {
+                            name: 'x_nesa_aid_ai_technology'
+                            element: 'category'
+                            value: 'nlp'
                         }
                     },
                     {
@@ -648,6 +1014,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'ef0fd963b5144c44b6be782b328bf25f'
+                        key: {
+                            sys_security_acl: '33f28371ae2c46ae829ff7cddc480cc3'
+                            sys_user_role: {
+                                id: 'bcfb9998d6544e849ab9510587329953'
+                                key: {
+                                    name: 'admin'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f04485d17ab943f8a7b95457b6f08097'
+                        key: {
+                            name: 'x_nesa_aid_ai_service'
+                            element: 'active'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: 'f331320838144714b7a56e6c7add1697'
                         key: {
@@ -675,6 +1063,22 @@ declare global {
                                     name: 'admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f8be8b012b6a45c3a679b9b32955378e'
+                        key: {
+                            name: 'x_nesa_aid_ai_demand'
+                            element: 'ai_technology'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'f9980308b514443bb09ab90369d76c7f'
+                        key: {
+                            name: 'x_nesa_aid_ai_service'
                         }
                     },
                 ]

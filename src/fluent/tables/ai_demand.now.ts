@@ -31,6 +31,23 @@ export const x_nesa_aid_ai_demand = Table({
             mandatory: true,
         }),
 
+        end_to_end_process: ReferenceColumn({
+            label: 'End-to-End Process',
+            referenceTable: 'x_nesa_aid_end_to_end_process',
+            referenceQual: 'active=true',
+        }),
+
+        ai_technology: ReferenceColumn({
+            label: 'AI Technology',
+            referenceTable: 'x_nesa_aid_ai_technology',
+            referenceQual: 'active=true',
+        }),
+
+        ai_service: ReferenceColumn({
+            label: 'AI Service',
+            referenceTable: 'x_nesa_aid_ai_service',
+            referenceQual: 'active=true',
+        }),
 
         geographical_scope: ChoiceColumn({
             label: 'Geographical Scope',
