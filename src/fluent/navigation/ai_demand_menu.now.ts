@@ -45,3 +45,33 @@ export const end_to_end_processes_module = Record({
         order: 300,
     },
 })
+
+export const ai_technologies_module = Record({
+    $id: Now.ID['ai_technologies_module'],
+    table: 'sys_app_module',
+    data: {
+        title: 'AI Technologies',
+        application: ai_demand_menu,
+        link_type: 'LIST',
+        name: 'x_nesa_aid_ai_technology',
+        roles: ['x_nesa_aid.admin'],
+        active: true,
+        order: 400,
+    },
+})
+
+
+export const ai_services_module = Record({
+    $id: Now.ID['ai_services_module'],
+    table: 'sys_app_module',
+    data: {
+        title: 'AI Services',
+        application: ai_demand_menu,
+        link_type: 'LIST',
+        name: 'x_nesa_aid_ai_service',
+        roles: ['x_nesa_aid.admin'],
+        active: true,
+        order: 500,
+    },
+})
+
